@@ -1,4 +1,4 @@
-![](./screenshot.png)
+![](./assets/images/screenshot.png)
 
 # Social links profile page
 
