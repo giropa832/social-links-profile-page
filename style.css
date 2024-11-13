@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --grey900: hsl(0, 0%, 8%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey700: hsl(0, 0%, 20%);
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--grey900);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.profile {
+    background-color: var(--grey800);
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    width: 327px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 88px;
+    height: 88px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.profile-name {
+    color: var(--white);
+
+}
+
+.profile-name h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.profile-location {
+    color: var(--green);
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.profile-bio {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.profile-links {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.profile-links a:hover {
+    background-color: var(--green);
+    color: black;
+    transition-delay: 0.1s;
+}
+
+.profile-links a {
+    background-color: var(--grey700);
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 12px;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s ease;
+
+}
+
+.attribution {
+    padding-top: 24px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--white);
+}
+
+.attribution a:hover {
+    color: var(--green);
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .profile {
+        width: 456px;
+        padding: 40px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    .profile {
+        width: 384px;
+        padding: 40px;
+    }
+}
