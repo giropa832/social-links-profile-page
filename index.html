@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </noscript>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -20,7 +23,7 @@
   <main>
     <div class="profile">
       <div class="profile-image">
-        <img src="https://gravatar.com/avatar/b139d0926fa3b87a6f9421c4e13dc736?=s=88&d=retro&f=webp" alt="Avatar Jerónimo Palacios">
+        <img src="https://gravatar.com/avatar/b139d0926fa3b87a6f9421c4e13dc736?=s=88&d=retro&f=webp" loading="lazy" alt="Avatar Jerónimo Palacios">
       </div>
       <div class="profile-header">
         <div class="profile-name"><h1>Jerónimo Palacios</h1></div>
