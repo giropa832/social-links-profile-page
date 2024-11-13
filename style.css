@@ -95,6 +95,10 @@ body {
 
 .profile-links a {
     background-color: var(--grey700);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
     border-radius: 8px;
     box-sizing: border-box;
     text-decoration: none;
